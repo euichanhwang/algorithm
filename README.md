@@ -1,5 +1,5 @@
 ## 알고리즘 문제 풀기 연습  
-![c++](https://img.shields.io/badge/language-c%2B%2B-red) [![Tistory Badge](https://img.shields.io/badge/Tech%20Blog-555263?style=flat&logoColor=white)](https://chan9.tistory.com/)
+![c++](https://img.shields.io/badge/language-c%2B%2B-red) [![Tistory Badge](https://img.shields.io/badge/-tech%20blog-important)](https://chan9.tistory.com/)
 >📖하루 한 문제 풀기를 목표로 합니다.
 ### 문제풀이 사이트
 - [백준 온라인 저지](https://www.acmicpc.net/) ➡️**소스코드 파일 이름이 B로 시작**
