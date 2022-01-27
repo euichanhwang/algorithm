@@ -7,7 +7,7 @@
 ## sorting
 | # | 문제 | 중요도 |
 |:---|:------|:--------|
-| 01 |[백준 2751번 수 정렬하기 2](https://github.com/euichanhwang/algorithm/blob/main/src/sorting/B2751.cpp)|⭐️⭐️       |
+| 01 |[백준 2751번 수 정렬하기 2](https://github.com/euichanhwang/algorithm/tree/main/src/sorting/B2751)|⭐️⭐️       |
 | 02 |      |        |
 | 03 |      |        |
 | 04 |      |        |
