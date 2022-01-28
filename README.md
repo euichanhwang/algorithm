@@ -8,7 +8,7 @@
 | # | 문제 | 중요도 |
 |:---|:------|:--------|
 | 01 |[백준 2751번 수 정렬하기 2](https://github.com/euichanhwang/algorithm/tree/main/src/sorting/B2751)|⭐️⭐️       |
-| 02 |      |        |
+| 02 |[백준 1431번 시리얼 번호](https://github.com/euichanhwang/algorithm/tree/main/src/sorting/B1431)|⭐️⭐️       |
 | 03 |      |        |
 | 04 |      |        |
 | 05 |      |        |
