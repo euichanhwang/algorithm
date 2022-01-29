@@ -9,7 +9,7 @@
 |:---|:------|:--------|
 | 01 |[[백준 2751번] 수 정렬하기 2](https://github.com/euichanhwang/algorithm/tree/main/src/sorting/B2751)|⭐️⭐️       |
 | 02 |[[백준 1431번] 시리얼 번호](https://github.com/euichanhwang/algorithm/tree/main/src/sorting/B1431)|⭐️⭐️       |
-| 03 |      |        |
+| 03 |[[백준 11650번] 좌표 정렬하기](https://www.acmicpc.net/problem/11650)|⭐️⭐️⭐️          |
 | 04 |      |        |
 | 05 |      |        |
 | 06 |      |        |
