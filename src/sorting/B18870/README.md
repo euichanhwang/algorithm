@@ -14,8 +14,37 @@
 - erase함수는 vector 배열에서 특정 원소를 삭제하는 함수이다.  
 v.erase(v.begin()+s, v.begin()+e) 명령어를 입력하면 [s,e) 원소가 삭제된다.  
 따라서, erase 함수와 unique 함수를 함께 사용해서 벡터에서 필요한 원소만 뽑아낼 수 있다.
+v.erase(unique(v.begin(), v.end()), v.end()); 를 사용하면 unique 함수를 실행 한 후 반환 위치가 원본이 유지된 원소들의  
+첫번째 주소 값이므로, 벡터의 마지막까지 지우면 중복이 없는 값을 얻을 수 있다.  
+###  lower_bound와 upper_bound 함수 : 이진 탐색으로 원소 탐색 
+- lower_bound 함수는 찾으려는 **key값보다 같거나 큰 숫자가** 배열 몇 번째에서 처음 등장하는지 찾기 위해 사용한다.  
+⭐️탐색을 진행할 배열 혹은 벡터는 오름차순 정렬되어 있어야 한다.  
+**원소의 수가 number개 일때,lower_bound(arr,arr+number,6)-arr** //첫 주소부터 끝까지 탐색, 6 이상의 숫자가 처음으로 나오는 위치의  
+인덱스 번호. **lower_bound의 반환형은 Iterator이므로 실제로 몇 번째 인덱스인지 알고 싶으면 첫번째 주소를 빼준다.**  
+- upper_bound 함수는 찾으려는 **key값을 초과하는 숫자가** 배열 몇 번째에서 처음 등장하는지 찾기 위해 사용한다.  
+⭐️탐색을 진행할 배열 혹은 벡터는 오름차순 정렬되어 있어야 한다.     
+**원소의 수가 number개 일때,upper_bound(arr,arr+number,3)-arr**//첫 주소부터 끝까지 탐색, 3을 처음으로 초과하는 숫자가 나오는 위치의  
+인덱스 번호를 반환. **lower_bound와 마찬가지로 반환형이 Iterator이므로 실제 몇 번째 인덱스인지 알고 싶으면 첫번째 주소를 빼준다.**  
+### lower_bound 함수와 upper_bound 함수의 활용
 
 
 ```c++
+int number;
+    cin >> number;
+    vector<int> v(number); 
+    
+    for (int i = 0; i < number; i++)
+    {
+        cin >> v[i];
+    }
+    vector<int> cv(v); 
+    sort(cv.begin(), cv.end()); 
+    cv.erase(unique(cv.begin(), cv.end()), cv.end()); 
+    for (int i = 0; i < number; i++)
+    {
+        
+        auto it = lower_bound(cv.begin(), cv.end(), v[i]);
+        cout << it - cv.begin() << ' ';
 
+    }
 ```
