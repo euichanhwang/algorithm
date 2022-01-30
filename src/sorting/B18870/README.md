@@ -26,11 +26,30 @@ v.erase(unique(v.begin(), v.end()), v.end()); 를 사용하면 unique 함수를 
 **원소의 수가 number개 일때,upper_bound(arr,arr+number,3)-arr**//첫 주소부터 끝까지 탐색, 3을 처음으로 초과하는 숫자가 나오는 위치의  
 인덱스 번호를 반환. **lower_bound와 마찬가지로 반환형이 Iterator이므로 실제 몇 번째 인덱스인지 알고 싶으면 첫번째 주소를 빼준다.**  
 ### lower_bound 함수와 upper_bound 함수의 활용
-
-
-
+- 오름차순 정렬된 자료에서 특정 범위에 속하는 숫자가 몇 개 있는지 탐색하고자 할 때
 ```c++
-int number;
+int main() {
+
+	vector<int> arr = { 1,3,5,5,7,8,8,10,10,11,13 };
+	cout << "5 이상 11 이하의 갯수 : " << upper_bound(arr.begin(), arr.end(), 11) - lower_bound(arr.begin(), arr.end(), 5);
+    //11을 초과하는 13의 인덱스 번호는 10. 5보다 같거나 큰 숫자는 인덱스 2에서 처음 등장. 10-2=8이다.
+	return 0;
+}
+```  
+- 오름차순 정렬된 자료에서 특정한 숫자가 몇 번 나오는지 탐색하고자 할 때  
+이 경우 **O(logN)**으로 탐색 가능하다.  
+```c++
+int main() {
+
+	vector<int> arr = { 1,3,5,5,5,8,8,10,10,11,13 };
+	cout << "5의 갯수 : " << upper_bound(arr.begin(), arr.end(), 5) - lower_bound(arr.begin(), arr.end(), 5);
+    //5를 초과하는 숫자가 처음 나오는 위치-5이상의 수가 처음 나오는 위치
+	return 0;
+}
+```  
+### 18870번 소스 코드
+```c++
+    int number;
     cin >> number;
     vector<int> v(number); 
     
@@ -38,14 +57,14 @@ int number;
     {
         cin >> v[i];
     }
-    vector<int> cv(v); 
-    sort(cv.begin(), cv.end()); 
-    cv.erase(unique(cv.begin(), cv.end()), cv.end()); 
+    vector<int> cv(v);  //원본 배열을 복사할 벡터 선언
+    sort(cv.begin(), cv.end()); //오름차순 정렬
+    cv.erase(unique(cv.begin(), cv.end()), cv.end()); // unique함수 이용 중복되는 원소 뒤로 보낸 후 erase로 정렬되지 않은 부분 삭제 
     for (int i = 0; i < number; i++)
     {
         
-        auto it = lower_bound(cv.begin(), cv.end(), v[i]);
-        cout << it - cv.begin() << ' ';
+        auto it = lower_bound(cv.begin(), cv.end(), v[i]); //원본 배열에서 v[i]보다 같거나 큰 숫자의 인덱스 반환 
+        cout << it - cv.begin() << ' '; // 반환형은 iterator이므로 실제 위치를 알고 싶으면 첫 주소를 빼준다
 
     }
 ```
