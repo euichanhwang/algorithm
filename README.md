@@ -14,3 +14,8 @@
 | 05 |      |        |
 | 06 |      |        |
 
+## recursion
+| # | 문제 | 중요도 |
+|:---|:------|:--------|
+| 01 |[[백준 11729번] 하노이 탑 이동하기](https://github.com/euichanhwang/algorithm/tree/main/src/recursion/B11729)|⭐️⭐️       |
+| 02 |      |        |
