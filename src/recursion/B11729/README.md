@@ -9,7 +9,7 @@
 - 원반은 한 번에 하나씩만 옮길 수 있다.  
 - 옮기는 과정에서 작은 원반의 위에 큰 원반이 올려져서는 안된다.  
 ### 재귀적으로 해결하기
-                                                         
+![하노이탑의 재귀적 해결](https://github.com/euichanhwang/algorithm/blob/main/img/%ED%95%98%EB%85%B8%EC%9D%B4%ED%83%91%20%EC%9E%AC%EA%B7%80%EC%A0%81%20%ED%95%B4%EA%B2%B0.jpg)                                                           
 ```c++
 void hanoi(int n,int start, int mid, int end) {
     //출력문으로 옮기는 작업을 시뮬레이션
