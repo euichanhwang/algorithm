@@ -20,7 +20,7 @@
 | 01 |[[백준 11729번] 하노이 탑 이동하기](https://github.com/euichanhwang/algorithm/tree/main/src/recursion/B11729)|⭐️⭐️       |
 | 02 |      |        |
 
-## 기본 자료구조
+## data-structure
 | # | 문제 | 중요도 |
 |:---|:------|:--------|
 | 01 |[[백준 1406번] 에디터](https://github.com/euichanhwang/algorithm/tree/main/src/data%20structure/B1406)|⭐️⭐️|
