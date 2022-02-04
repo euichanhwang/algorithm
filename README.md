@@ -23,5 +23,5 @@
 ## 기본 자료구조
 | # | 문제 | 중요도 |
 |:---|:------|:--------|
-| 01 |[[백준 1406번] 에디터])|⭐️⭐️|
+| 01 |[[백준 1406번] 에디터](https://github.com/euichanhwang/algorithm/tree/main/src/data%20structure/B1406)|⭐️⭐️|
 | 02 |      |        |
