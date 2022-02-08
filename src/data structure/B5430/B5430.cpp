@@ -10,76 +10,85 @@ typedef pair<ll, int> pli;
 typedef pair<int, ll> pil;
 typedef pair<string, int> psi;
 typedef pair<int, char> pic;
-
-int number;
-
-void parse(string &tmp, deque<int> &d)
+typedef pair<char,int > pci;
+#define X first
+#define Y second
+void parse(string &tmp,deque<int> &d) //[1,2,3,4] -> 1 2 3 4로 deque 에 넣기
 {
-    int cur = 0;
-    for (int i = 1; i + 1 < tmp.size(); i++)
+    int cur=0;
+    for(int i=1;i+1<tmp.size();i++)
     {
-        if (tmp[i] == ',')
+        if(tmp[i]==',')
         {
             d.push_back(cur);
-            cur = 0;
+            cur=0;
         }
         else
-        {
-            cur = 10 * cur + (tmp[i] - '0');
-        }
+            cur=10*cur+(tmp[i]-'0');
     }
-    if (cur != 0)
+    //[44] 같은 경우에는, 나중에 deque에 넣어준다. 
+    if(cur!=0)
         d.push_back(cur);
+
 }
-void print(deque<int> &d)
+void print(deque<int>&d) // 1 2 3 4를 [1,2,3,4] 형식으로 출력
 {
     cout << '[';
-    for (int i = 0; i < d.size(); i++)
+    for(int i=0;i<d.size();i++)
     {
-        cout << d[i];
-        if (i + 1 != d.size()) // 0 1 2 3 size=4 i+1!=4
-        {
+        cout <<d[i];
+        if(i+1!=d.size())
             cout << ',';
-        }
     }
-    cout << "]\n";
+    cout << ']' <<'\n';
 }
-
-int main()
-{
+int main() {
     ios::sync_with_stdio(false);
     cin.tie(nullptr);
+    int number;
     cin >> number;
-    while (number--)
+
+    while(number--)
     {
         deque<int> d;
-        int rev = 0;
-        bool flag = false;
-        int repeatNum;
-        string func, tmp; //함수, [1,2,3,4] 와 같은 입력
+        string func;
+        string repeatNum;
+        string tmp;
+        bool flag=false;
         cin >> func;
         cin >> repeatNum;
         cin >> tmp;
-        parse(tmp, d);
-        for(char c : func)
-    {
-      if(c == 'R')
-        rev = 1 - rev;
-      else{
-        if(d.empty()){
-          flag = true;
-          break;
-        }
-        if(!rev) d.pop_front();
-        else d.pop_back();
-      }
-    }
-    if(flag)
-      cout << "error\n";
-    else{
-      if(rev) reverse(d.begin(), d.end());
-      print(d);
-    }
-  }
-}
+        int rev=0;
+        parse(tmp,d);
+        for(auto c:func)
+        {
+            if(c=='R') //REVERSE
+                rev=1-rev;
+            else //D . DELETE
+            {
+                if(d.empty()) // 비어있다면 error 출력
+                {
+                    flag=true;
+                    break;
+                }
+                else
+                {
 
+                    if(!rev) d.pop_front(); //안뒤집어져 있다면 맨처음에서 뺀다.
+                    else d.pop_back(); //뒤집힌 상태라면 뒤에서 뺀다.
+                }
+            }
+        }
+
+        if(flag) cout << "error" << '\n';
+        else
+        {
+            if(rev)reverse(d.begin(),d.end());
+            print(d);
+        }
+    }
+
+
+
+    return 0;
+}
