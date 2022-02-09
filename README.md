@@ -7,10 +7,10 @@
 ## sorting
 | # | 문제 | 중요도 |
 |:---|:------|:--------|
-| 01 |[[백준 2751번] 수 정렬하기 2](https://github.com/euichanhwang/algorithm/tree/main/src/sorting/B2751)|⭐️⭐️       |
-| 02 |[[백준 1431번] 시리얼 번호](https://github.com/euichanhwang/algorithm/tree/main/src/sorting/B1431)|⭐️⭐️       |
-| 03 |[[백준 11650번] 좌표 정렬하기](https://github.com/euichanhwang/algorithm/tree/main/src/sorting/B11650)|⭐️⭐️⭐️          |
-| 04 |[[백준 18870번] 좌표 압축](https://github.com/euichanhwang/algorithm/tree/main/src/sorting/B18870)|⭐️⭐️⭐️⭐️           |  
+| 01 |[[백준 2751번] 수 정렬하기 2](https://github.com/euichanhwang/algorithm/tree/main/src/sorting/B2751)|⭐️      |
+| 02 |[[백준 1431번] 시리얼 번호](https://github.com/euichanhwang/algorithm/tree/main/src/sorting/B1431)|⭐️      |
+| 03 |[[백준 11650번] 좌표 정렬하기](https://github.com/euichanhwang/algorithm/tree/main/src/sorting/B11650)|⭐️⭐️          |
+| 04 |[[백준 18870번] 좌표 압축](https://github.com/euichanhwang/algorithm/tree/main/src/sorting/B18870)|⭐️⭐️⭐️           |  
 | 05 |      |        |
 | 06 |      |        |
 
@@ -28,5 +28,12 @@
 | 03 |[[백준 10799번] 쇠막대기](https://github.com/euichanhwang/algorithm/tree/main/src/data%20structure/B10799)|⭐️        |
 | 04 |[[백준 5430번] AC](https://github.com/euichanhwang/algorithm/tree/main/src/data%20structure/B5430)|⭐️⭐️⭐️        |
 | 05 |      |        |
+
+## bfs
+| # | 문제 | 중요도 |
+|:---|:------|:--------|
+| 01 |[[백준 1926번] 그림](https://github.com/euichanhwang/algorithm/tree/main/src/data%20structure/B1406)|⭐️⭐️⭐️|
+| 02 |[[백준 2178번] 미로](https://github.com/euichanhwang/algorithm/tree/main/src/data%20structure/B2493)|⭐️⭐️⭐️|
+
 
 
