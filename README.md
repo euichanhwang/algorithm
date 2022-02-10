@@ -33,7 +33,7 @@
 | # | 문제 | 중요도 |
 |:---|:------|:--------|
 | 01 |[[백준 1926번] 그림](https://github.com/euichanhwang/algorithm/tree/main/src/bfs/B1926)|⭐️⭐️⭐️|
-| 02 |[[백준 2178번] 미로](https://github.com/euichanhwang/algorithm/tree/main/src/data%20structure/B2493)|⭐️⭐️⭐️|
+| 02 |[[백준 2178번] 미로](https://github.com/euichanhwang/algorithm/tree/main/src/bfs/B2178)|⭐️⭐️⭐️|
 
 
 
