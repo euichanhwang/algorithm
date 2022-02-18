@@ -1,7 +1,6 @@
 # 알고리즘 문제 풀기 연습  
 [![c++](https://img.shields.io/badge/language-c%2B%2B-red)](https://en.cppreference.com/w/) [![Tistory Badge](https://img.shields.io/badge/-tech%20blog-important)](https://chan9.tistory.com/)  
-[![Solved.ac
-프로필](http://mazassumnida.wtf/api/v2/generate_badge?boj={gerrard})](https://solved.ac/{gerrard})
+[![Solved.ac 프로필](http://mazassumnida.wtf/api/v2/generate_badge?boj={gerrard})](https://solved.ac/{gerrard})
 
 >📖하루 세 문제 풀기+한 문제 업로드를 목표로 합니다.
 ## 문제풀이 사이트
