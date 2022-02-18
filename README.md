@@ -37,6 +37,7 @@
 | 03 |[[백준 7576번] 토마토](https://github.com/euichanhwang/algorithm/tree/main/src/bfs/B7576)|⭐️⭐️⭐️⭐️|
 | 04 |[[백준 4179번] 불!](https://github.com/euichanhwang/algorithm/tree/main/src/bfs/B4179)|⭐️⭐️⭐️|
 | 05 |[[백준 1697번] 숨바꼭질](https://github.com/euichanhwang/algorithm/tree/main/src/bfs/B1697)|⭐️⭐️|
+| 05 |[[백준 12851번] 숨바꼭질 2](https://github.com/euichanhwang/algorithm/tree/main/src/bfs/B12851)|⭐️⭐️|
 
 
 
