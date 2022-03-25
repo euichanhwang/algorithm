@@ -41,5 +41,5 @@
 | 05 |[[백준 1697번] 숨바꼭질](https://github.com/euichanhwang/algorithm/tree/main/src/bfs/B1697)|⭐️⭐️|
 | 06 |[[백준 12851번] 숨바꼭질 2](https://github.com/euichanhwang/algorithm/tree/main/src/bfs/B12851)|⭐️⭐️|
 | 07 |[[백준 17806번] 아기상어 2](https://github.com/euichanhwang/algorithm/tree/main/src/bfs/B17086)|⭐️⭐️|
-| 08 |[[백준 17806번] 숨바꼭질 3](https://github.com/euichanhwang/algorithm/tree/main/src/bfs/B17086)|⭐️⭐️|
+| 08 |[[백준 17806번] 숨바꼭질 3](https://github.com/euichanhwang/algorithm/tree/main/src/bfs/B17086)
 
