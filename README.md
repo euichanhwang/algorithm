@@ -44,6 +44,12 @@
 | 08 |[[백준 13549번] 숨바꼭질 3](https://github.com/euichanhwang/algorithm/tree/main/src/bfs/B13549)|⭐️⭐️|
 | 08 |[[백준 2665번] 미로만들기](https://github.com/euichanhwang/algorithm/tree/main/src/bfs/B2665)|⭐️⭐️⭐️|
 
+## 시뮬레이션 
+| # | 문제 | 중요도 |
+|:---|:------|:--------|
+| 01 |[[백준 16509번] 장군](https://github.com/euichanhwang/algorithm/tree/main/src/bfs/B1926)|⭐️⭐️⭐️|
+| 02 |      |        |
+
 ## 백트래킹
 | # | 문제 | 중요도 |
 |:---|:------|:--------|
