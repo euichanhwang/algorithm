@@ -1,4 +1,5 @@
-# 알고리즘 문제 풀기 연습  
+# 알고리즘 문제 풀기 연습 
+문제 해설 블로그도 운영하고 있습니다.
 https://chan9.tistory.com/category/%EC%95%8C%EA%B3%A0%EB%A6%AC%EC%A6%98.  
 
 [![c++](https://img.shields.io/badge/language-c%2B%2B-red)](https://en.cppreference.com/w/) [![Tistory Badge](https://img.shields.io/badge/-tech%20blog-important)](https://chan9.tistory.com/)  
