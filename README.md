@@ -1,5 +1,6 @@
 # 알고리즘 문제 풀기 연습  
-https://chan9.tistory.com/category/%EC%95%8C%EA%B3%A0%EB%A6%AC%EC%A6%98. 함께 업로드 중입니다
+https://chan9.tistory.com/category/%EC%95%8C%EA%B3%A0%EB%A6%AC%EC%A6%98.  
+
 [![c++](https://img.shields.io/badge/language-c%2B%2B-red)](https://en.cppreference.com/w/) [![Tistory Badge](https://img.shields.io/badge/-tech%20blog-important)](https://chan9.tistory.com/)  
 [![Solved.ac Profile](http://mazassumnida.wtf/api/v2/generate_badge?boj=gerrard)](https://solved.ac/gerrard)
 
