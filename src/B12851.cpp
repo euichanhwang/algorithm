@@ -1,6 +1,7 @@
 #include <bits/stdc++.h>
+
 using namespace std;
-typedef long long ll;
+typedef long long ll;  //-2^63 ~ 2^63-1
 typedef unsigned long long llu;
 typedef pair<int, int> pii;
 typedef pair<double, double> pdd;
@@ -10,55 +11,44 @@ typedef pair<ll, int> pli;
 typedef pair<int, ll> pil;
 typedef pair<string, int> psi;
 typedef pair<int, char> pic;
+int INF = 1e9 + 7;
+//512MB = 1.2억개 int
+//if(nx<0||nx>=n||ny<0||ny>=m) continue;
+/*int dz[6]={1,-1,0,0,0,0};
+int dx[6]={0,0,1,-1,0,0};
+int dy[6]={0,0,0,0,1,-1};*/ // 3차원 bfs
 #define X first
 #define Y second
-//if(nx<0||nx>=n||ny<0||ny>=m) continue;
-int n,k; //n은 수빈이의 위치,k는 동생이 있는 위치
+int dx[4] = {1, 0, -1, 0};
+int dy[4] = {0, 1, 0, -1};
+int n,k;
 bool vis[100002];
-int main()
-{
+int main() {
     ios::sync_with_stdio(false);
-    cin.tie(NULL);
+    cin.tie(nullptr);
     cin >> n >> k;
-    queue<pii> q; //위치,시간
+    queue<pair<int,int>> q;//{위치,시간}
     q.push({n,0});
-    int ans=0;//가장 빠른 시간
-    int cnt=0;//찾는 방법의 수 
-    while(!q.empty())
-    {
-        int now=q.front().first; //현재 위치
-        int time=q.front().second; //시간
+    int fastTime = 0x7f7f7f7f;
+    int way = 0;
+    while(!q.empty()){
+        int now = q.front().first;
+        int time = q.front().second;
         q.pop();
-        vis[now]=true;
-        //처음 찾았을 때
-        if(!cnt&&now==k)
-        {
-            ans=time;
-            cnt++;
-        }
-        //그 이후에 찾았을 때
-        else if(cnt&&now==k&&ans==time)
-            cnt++;    
+        vis[now] = true;
 
+        if(fastTime < time) break;
 
-        for(int nxt:{now-1,now+1,2*now})
-        {
-            if(nxt<0||nxt>100000)continue;
-            if(!vis[nxt])
-            {
-                q.push({nxt,time+1});
-            }
+        if(now==k){
+            fastTime = time;
+            way++;
+            continue;
         }
+        if(now-1>=0 && !vis[now-1]) q.push({now-1,time+1});
+        if(now+1<=100000 && !vis[now+1]) q.push({now+1,time+1});
+        if(2*now<=100000 && !vis[2*now]) q.push({2*now,time+1});
     }
-    cout << ans << '\n';
-    cout << cnt << '\n';
-   
-  
-
-    
- 
-   
-
-
+    cout << fastTime << '\n';
+    cout << way;
     return 0;
 }
